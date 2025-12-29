@@ -4,9 +4,8 @@ def get_book_text(file_path):
     return file_contexts
 
 def main():
-  get_book_text("books/frankenstein.txt")
-  store = file_path
-  print(file_path)
+  book_text = get_book_text("books/frankenstein.txt")
+  print(book_text)
 
 if __name__ == "__main__":
   main()
