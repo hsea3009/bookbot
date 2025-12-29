@@ -1,2 +1,1 @@
-
-print("Greeting boots")
+print("greeting boots")
