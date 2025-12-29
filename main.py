@@ -13,7 +13,7 @@ def main():
   book_text = get_book_text("books/frankenstein.txt")
   print(book_text)
   words = word_count("books/frankenstein.txt")
-  print(words)
+  print(f'Found {words} total words')
 
   
 
