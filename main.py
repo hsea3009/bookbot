@@ -3,5 +3,5 @@ def main():
     with open(books/frankenstein.txt) as f:
       file_contexts = f.read()
 
-if __name__ == "__main__":
-  main()
+# if __name__ == "__main__":
+main()
