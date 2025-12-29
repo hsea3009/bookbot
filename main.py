@@ -1,8 +1,12 @@
+def get_book_text(file_path):
+  with open(file_path) as f:
+    file_contexts = f.read()
+    return file_contexts
+
 def main():
-  def get_book_text():
-    with open("books/frankenstein.txt") as f:
-      file_contexts = f.read()
-      print(file_contexts)
+  get_book_text("books/frankenstein.txt")
+  store = file_path
+  print(file_path)
 
 if __name__ == "__main__":
   main()
