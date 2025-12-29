@@ -4,4 +4,4 @@ def main():
       file_contexts = f.read()
 
 if __name__ == "__main__":
-main()
+  main()
