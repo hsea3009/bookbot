@@ -11,11 +11,11 @@ def text_count(file_path):
   with open(file_path) as f:
     file_contexts = f.read()
     for letter in file_contexts:
-      if letter == "p":
+      if letter.lower() == "p":
         p_count += 1
-      if letter == "t":
+      if letter.lower() == "t":
         t_count += 1
-      if letter == "c":
+      if letter.lower() == "c":
         c_count += 1
   print(f't: {t_count}, p: {p_count}, c: {c_count}')
 
