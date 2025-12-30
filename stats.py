@@ -30,5 +30,13 @@ def sort_on(file_path):
           letter_counts[char] += 1
         else:
           letter_counts[char] = 1
-    return letter_counts
-  # print(letter_counts)
+    return dict_count(letter_counts)
+
+def dict_count(letter_counts):
+  list_of_dict = []
+  for char, num in letter_counts.items():
+    entry = {"char":char, "num":num}
+    list_of_dict.append(entry)
+#creating a function inside to sort items
+  def sort_item(item):
+    return item[num]
