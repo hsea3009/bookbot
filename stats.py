@@ -26,3 +26,5 @@ def sort_on(file_path):
     letter_counts = {}
     for char in file_contexts.lower():
       if char.isalpha():
+        letter_counts[char] += 1
+  print(letter_counts)
