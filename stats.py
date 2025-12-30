@@ -37,6 +37,10 @@ def dict_count(letter_counts):
   for char, num in letter_counts.items():
     entry = {"char":char, "num":num}
     list_of_dict.append(entry)
+
 #creating a function inside to sort items
-  def sort_item(item):
+  
+  def sort_on_num(item):
     return item[num]
+  list_of_dict.sort(reverse=True, key=sort_on_num)
+  return list_of_dict
