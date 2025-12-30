@@ -17,7 +17,7 @@ def text_count(file_path):
         t_count += 1
       if letter.lower() == "c":
         c_count += 1
-  print(f't: {t_count}, p: {p_count}, c: {c_count}')
+  print(f"'t': {t_count}, 'p': {p_count}, 'c': {c_count}")
 
 
 
