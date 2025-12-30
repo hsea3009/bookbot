@@ -28,6 +28,6 @@ def sort_on(file_path):
       if char.isalpha():
         if char in letter_counts:
           letter_counts[char] += 1
-      else:
-        letter_counts[char] = 1
+        else:
+          letter_counts[char] = 1
   print(letter_counts)
