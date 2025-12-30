@@ -7,7 +7,8 @@ def word_count(file_path):
 def text_count(file_path):
   with open(file_path) as f:
     file_contexts = f.read()
-    return file_contexts
+  return file_contexts
+  print(file_contexts)
 
 text_count("books/frankenstein.txt")
 
