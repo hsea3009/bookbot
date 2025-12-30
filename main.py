@@ -1,4 +1,4 @@
-from stats import word_count, text_count
+from stats import word_count, text_count, letter_count
 
 def get_book_text(file_path):
   with open(file_path) as f:
