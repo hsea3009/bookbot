@@ -30,4 +30,4 @@ def sort_on(file_path):
           letter_counts[char] += 1
         else:
           letter_counts[char] = 1
-  print(letter_counts)
+  # print(letter_counts)
