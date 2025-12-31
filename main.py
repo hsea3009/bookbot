@@ -9,7 +9,7 @@ def get_book_text(file_path):
 
 def main():
   text = get_book_text("books/frankenstein.txt")
-  chars_dict = get_chars_dict(text)               # <- pass text
+  chars_dict = get_char_dict(text)               # <- pass text
   sorted_chars = chars_dict_to_sorted_list(char_dict)
 
   for item in sorted_chars:
