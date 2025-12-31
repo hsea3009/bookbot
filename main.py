@@ -6,17 +6,11 @@ def get_book_text(file_path):
     return file_contexts
 
 
-def main():
-  book_text = get_book_text("books/frankenstein.txt")
-  print(book_text)
-  words = word_count("books/frankenstein.txt")
-  print(f'Found {words} total words')
+def main(text):
+  text = get_book_text("books/frankenstein.txt")
+  chars_dict = get_chars_dict(text)               # <- pass text
+  sorted_chars = chars_dict_to_sorted_list(chars_dict) 
 
-  text = text_count("books/frankenstein.txt")
-  print(text)
-
-  letter_count = sort_on("books/frankenstein.txt")
-  print(letter_count)
 
 if __name__ == "__main__":
   main()
@@ -30,3 +24,17 @@ if __name__ == "__main__":
 #       if char.isalpha():
 #         letter_counts[char] += 1
 #   print(letter_counts)
+
+
+
+
+  # book_text = get_book_text("books/frankenstein.txt")
+  # print(book_text)
+  # words = word_count("books/frankenstein.txt")
+  # print(f'Found {words} total words')
+
+  # text = text_count("books/frankenstein.txt")
+  # print(text)
+
+  # letter_count = sort_on("books/frankenstein.txt")
+  # print(letter_count)
