@@ -14,7 +14,7 @@ def main(text):
 
 
 if __name__ == "__main__":
-  main(text)
+  main()
 
 
 # def sort_on(file_path):
