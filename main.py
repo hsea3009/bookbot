@@ -1,5 +1,5 @@
 from stats import word_count,chars_dict_to_sorted_list, get_char_dict
-
+import sys
 
 def get_book_text(file_path):
   with open(file_path) as f:
