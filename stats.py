@@ -20,9 +20,7 @@ def text_count(file_path):
   print(f"'t': {t_count}, 'p': {p_count}, 'c': {c_count}")
 
 
-def get_char(text):
-  # with open(file_path) as f:
-    # file_contexts = f.read()
+def get_char_dict(text):
     letter_counts = {}
     for char in file_contexts.lower():
       if char.isalpha():
@@ -30,9 +28,9 @@ def get_char(text):
           letter_counts[char] += 1
         else:
           letter_counts[char] = 1
-    return dict_count(letter_counts)
+    return letter_counts
 
-def dict_count(letter_counts):
+def chars_dict_to_sorted_list(chars_dict):
   list_of_dict = []
   for char, num in letter_counts.items():
     entry = {"char":char, "num":num}
