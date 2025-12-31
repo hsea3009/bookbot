@@ -22,6 +22,14 @@ def main():
 if __name__ == "__main__":
   main()
 
+print(sys.argv)
+
+
+print(sys.argv[1])
+
+print(sys.argv[0])
+
+
 
 # from stats import word_count, chars_dict_to_sorted_list, get_char_dict
 
