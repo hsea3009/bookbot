@@ -31,14 +31,13 @@ def get_char_dict(text):
     return letter_counts
 
 def chars_dict_to_sorted_list(chars_dict):
-  list_of_dict = []
-  for char, num in chars_dict.items():
-    entry = {"char":char, "num":num}
-    list_of_dict.append(entry)
+    list_of_dict = []
+    for char, num in chars_dict.items():
+        entry = {"char": char, "num": num}
+        list_of_dict.append(entry)
 
-#creating a function inside to sort items
-  
-  def sort_on_num(item):
-    return item["num"]
-  list_of_dict.sort(reverse=True, key=sort_on_num)
-  return list_of_dict
+    def sort_on_num(item):
+        return item["num"]
+
+    list_of_dict.sort(reverse=True, key=sort_on_num)
+    return list_of_dict
