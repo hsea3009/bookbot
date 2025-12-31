@@ -1,4 +1,5 @@
-from stats import word_count, text_count, sort_on
+from stats import word_count,chars_dict_to_sorted_list, get_char_dict, sort_on_num
+
 
 def get_book_text(file_path):
   with open(file_path) as f:
