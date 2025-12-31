@@ -7,15 +7,15 @@ def get_book_text(file_path):
     return file_contexts
 
 
-def main(text):
+def main():
   text = get_book_text("books/frankenstein.txt")
   chars_dict = get_chars_dict(text)               # <- pass text
-  sorted_chars = chars_dict_to_sorted_list(chars_dict)
+  sorted_chars = chars_dict_to_sorted_list(char_dict)
 
-for item in sorted_chars:
-  ch = item["char"]
-  if not ch.alpha():
-    continue
+  for item in sorted_chars:
+    ch = item["char"]
+    if not ch.isalpha():
+      continue
   print(f"{ch}: {item['num']}")
 
 
