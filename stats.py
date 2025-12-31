@@ -20,9 +20,9 @@ def text_count(file_path):
   print(f"'t': {t_count}, 'p': {p_count}, 'c': {c_count}")
 
 
-def sort_on(file_path):
-  with open(file_path) as f:
-    file_contexts = f.read()
+def get_char(text):
+  # with open(file_path) as f:
+    # file_contexts = f.read()
     letter_counts = {}
     for char in file_contexts.lower():
       if char.isalpha():
