@@ -2,22 +2,6 @@ def word_count(text):
   words = text.split()
   return len(words)
 
-def text_count(file_path):
-  p_count = 0
-  t_count = 0
-  c_count = 0
-  with open(file_path) as f:
-    file_contexts = f.read()
-    for letter in file_contexts:
-      if letter.lower() == "p":
-        p_count += 1
-      if letter.lower() == "t":
-        t_count += 1
-      if letter.lower() == "c":
-        c_count += 1
-  print(f"'t': {t_count}, 'p': {p_count}, 'c': {c_count}")
-
-
 def get_char_dict(text):
     letter_counts = {}
     for char in text.lower():
