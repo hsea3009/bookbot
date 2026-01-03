@@ -22,11 +22,11 @@ def main():
     chars_dict = get_char_dict(text)               
     sorted_chars = chars_dict_to_sorted_list(chars_dict)
 
-  for item in sorted_chars:
-    ch = item["char"]
-    if not ch.isalpha():
-      continue
-    print(f"{ch}: {item['num']}")
+    for item in sorted_chars:
+      ch = item["char"]
+      if not ch.isalpha():
+        continue
+      print(f"{ch}: {item['num']}")
 
 if __name__ == "__main__":
   main()
