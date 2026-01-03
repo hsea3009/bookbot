@@ -18,9 +18,9 @@ def main():
 
     # 3. Use that path
     text = get_book_text(book_path)
-  num_words = word_count(text)
-  chars_dict = get_char_dict(text)               
-  sorted_chars = chars_dict_to_sorted_list(chars_dict)
+    num_words = word_count(text)
+    chars_dict = get_char_dict(text)               
+    sorted_chars = chars_dict_to_sorted_list(chars_dict)
 
   for item in sorted_chars:
     ch = item["char"]
