@@ -8,7 +8,7 @@ def get_book_text(file_path):
 
 
 def main():
-  text = get_book_text("books/frankenstein.txt")
+  text = get_book_text("books/")
   num_words = word_count(text)
   chars_dict = get_char_dict(text)               
   sorted_chars = chars_dict_to_sorted_list(chars_dict)
