@@ -8,7 +8,16 @@ def get_book_text(file_path):
 
 
 def main():
-  text = get_book_text("books/*")
+   # 1. Check argument count
+    if len(sys.argv) != 2:
+        print("Usage: python3 main.py <path_to_book>")
+        sys.exit(1)
+
+    # 2. Get the path from sys.argv
+    book_path = sys.argv[1]
+
+    # 3. Use that path
+    text = get_book_text(book_path)
   num_words = word_count(text)
   chars_dict = get_char_dict(text)               
   sorted_chars = chars_dict_to_sorted_list(chars_dict)
